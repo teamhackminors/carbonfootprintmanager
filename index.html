@@ -23,11 +23,12 @@
 </head>
 <body>
     <script>
-      //Initialize OneSignal
-      window.OneSignalDeferred = window.OneSignalDeferred || []
-      OneSignalDeferred.push(async function (OneSignal) {
-        await OneSignal.init({ appId: "YOUR APP ID" })
-      })
+       window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(function(OneSignal) {
+        OneSignal.init({
+          appId: "99357bf3-f605-4bcc-8505-58cc61f34146",
+    });
+  });
     </script>
     <hide>
     <audio id="audio">
