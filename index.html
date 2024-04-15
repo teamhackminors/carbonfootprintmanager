@@ -28,12 +28,6 @@
     </hide>
     <!--Here we implement our page within iframe to addon extra effects like the AI Chatbot plugin, ambiance, notifications and others to our AI Carbon Footprint Manager. -->
     <iframe src="https://carbonmanager.streamlit.app/?embedded=true" onload="myAmbiance()"></iframe>
-    <script>
-  function myAmbiance() {
-    document.getElementById("audio").play();
-    document.getElementById("audio").loop= true;
-  }
-</script>
 <script>
     var chatDiv = document.createElement('div');
     chatDiv.id = 'botpressChat';
@@ -50,6 +44,12 @@
     };
     document.body.appendChild(script1);
     alert("Hi! This is to inform you that we have successfully plugged in our AI Chatbot, Chat2Eco, right at the bottom-right corner of your screen! You may check it out!");
+</script>
+<script>
+  function myAmbiance() {
+    document.getElementById("audio").play();
+    document.getElementById("audio").loop= true;
+  }
 </script>
 </body>
 </html>
